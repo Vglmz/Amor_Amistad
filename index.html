@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Hermosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rowdies:wght@300;400;700&family=Rubik+Bubbles&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla inicial -->
+        <div class="header-section">
+            <div class="title">
+                HOLA<br>
+                HERMOSA<br>
+                :)
+            </div>
+            
+            <div class="character-section">
+                <div class="character-image">
+                    <img src="Ochako.png" alt="Personaje animado" />
+                </div>
+                <div class="intro-box">
+                    Hola bella :) Feliz amor y amistad aaaaaaaaaa. Se que no es mi mejor pagina je, pero fue con amor pipipipi hahahaha. Te extraño montones ela, un poco triste estoy de no estar contigo hoy y salir y besarnos y sonreirnos como tontas 5 horas. Pero cuando vuelvas no dudes que hare todo eso. Es ochako ahhahaah tuutututtuuttu. En fin disfruta la corta pagina hahahahaah, si mil paginas tengo que hacer para hacerte ver que me importas y te amo mucho y el bien inmenso que haces en mi vida, mil veces las hago. Ademas en cada pagina voy mejorando je. Cuando tome mucha experiencia te hago una especie de pagina donde te adore religiosamente ahahahahaha. Sube el volumen jijiji :) Disfruta hermosa ⊂◉‿◉つ
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="main-section">
+            <h2 class="main-title">
+                ¿Sabes cuanto falta para besarnos con nuestra banda de fondo?
+            </h2>
+            
+            <div class="buttons-container">
+                <button class="action-button" id="btn1" onclick="openModal('btn1')">
+                    Mucho pipipi
+                </button>
+                <button class="action-button" id="btn2" onclick="openModal('btn2')">
+                    Poco jiji
+                </button>
+            </div>
+            
+            <div class="long-text">
+                Ya más pipipipi sentimental chillona que soy yo ahahahah, queria agradecerte por ser tan especial y linda como lo eres. Siento que mi vida es completamente diferente gracias a ti, y absolutamente en un buen sentido. He cambiado mucho y muchas cosas desde que entraste a mi vida, que fueron provocadas por ti y no puedo estar más feliz que todo eso. Siento que soy la persona que me quiero ser cuando estoy contigo porque eso quiero ser para ti ela. No te mereces menos, y quiero ser eso para ti. Eres mi persona favorita, eso lo sabes de sobra, pero no sabes lo mucho que eso significa para mi. Para mi estas perfecta así toda pata y todo ahahahahah. Te quiero mucho y muy presente en mi vida, y espero que con el tiempo pueda ser cada vez más así (aunque lo quiero ya!), y encajas perfectamente en mi vida ela. Odio que pienses que no es así, porque si somo honestas muchas de las cosas que chocaron no eran por ti, eran por mi o por mi lado. Tu eres hermosa y se que serias una novia muy linda. Solo no quiero que sigas con esa idea en tu cabeza linda, tu encajas perfectamente conmigo. En fin, no me pongo muy sentimental porque son las 3am y si lloro me pongo mocosa y no estas aca para ayudarme con eso ahahahahah. Taaaaaaamooooo muchisimo Daniela, y en verdad muchas gracias por el regalo bella creo que ya te has dado cuenta que me gusta que me conozcan e importa mucho para mi y no puedo pensar en un regalo más yo. Es hermoso y de verdad gracias. (｡◕‿◕｡) (Vivi del sabado: Anoche dormi abrazada a el y fue el mejor sueño que he tenido en semanas {◕ ◡ ◕})
+            </div>
+        </div>
+
+        <!-- Nueva sección de citas -->
+        <div class="dates-section">
+            <div class="date-card">
+                <div class="date-content">
+                    <div class="date-text">
+                        <h3>Tenemos muchas citas pendientes linda...</h3>
+                    </div>
+                    <div class="date-character snoopy-container">
+                        <img src="snoopy.png" alt="Snoopy" class="snoopy-image" />
+                    </div>
+                </div>
+                <button class="date-button yellow" id="manyBtn" onclick="openModal('manyBtn')">
+                    Muchas Muchassss
+                </button>
+            </div>
+
+            <div class="date-card">
+                <div class="date-content">
+                    <div class="date-character bakugo-container">
+                        <img src="bakugo.png" alt="Bakugo" class="bakugo-image" />
+                    </div>
+                    <div class="date-text">
+                        <h3>Peroo, quiero que tu elijas nuestra cita pendiente con tu otro novio de fondo je</h3>
+                    </div>
+                </div>
+                <button class="date-button yellow" onclick="openDateModal()">
+                    Yipi Yei Yei
+                </button>
+            </div>
+
+            <div class="gift-section">
+                <div class="gift-text">Por ultimo, un regalo tonto :)</div>
+                <div class="choose-text">Elige una carta :)</div>
+                
+                <div class="cards-container">
+                    <div class="card" onclick="flipCard(this, 1)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="back2.jpg" alt="Carta 1" />
+                            </div>
+                            <div class="card-back">
+                                <img src="A1.png" alt="Carta 1 Reverso" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" onclick="flipCard(this, 2)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="back1.png" alt="Carta 2" />
+                            </div>
+                            <div class="card-back">
+                                <img src="A2.png" alt="Carta 2 Reverso" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" onclick="flipCard(this, 3)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="back2.jpg" alt="Carta 3" />
+                            </div>
+                            <div class="card-back">
+                                <img src="A3.png" alt="Carta 3 Reverso" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL POPUP -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modal-body">
+                Selecciona un botón para ver el contenido
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PARA ELEGIR CITA -->
+    <div class="modal-overlay" id="dateModal">
+        <div class="modal-content date-modal">
+            <button class="modal-close" onclick="closeDateModal()">&times;</button>
+            <div class="date-modal-body">
+                <h3>Elige nuestra cita bonita ʕ·ᴥ·ʔ</h3>
+                <textarea 
+                    id="dateText" 
+                    placeholder="Ya que no nos podemos ver hoy :( escribe aqui tu cita y prometo hacerla romanticamente cuando nos veamos hermosa :)"
+                    rows="6"
+                    maxlength="500"
+                ></textarea>
+                <div class="textarea-counter">
+                    <span id="charCount">0</span>/500 caracteres
+                </div>
+                <div class="date-modal-buttons">
+                    <button class="date-submit-btn" onclick="submitDate()">
+                        Cita perfecta ;)
+                    </button>
+                    <button class="date-cancel-btn" onclick="closeDateModal()">
+                        pipipipi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DROPDOWN PARA CARTAS (igual a los botones anteriores) -->
+    <div class="dropdown-box" id="cardDropdown" style="position: absolute; display: none;">
+        <div id="cardDropdownContent">
+            <!-- Aquí aparecerá el mensaje de la carta -->
+        </div>
+    </div>
+
+    <audio id="bg-music" src="Siempre.mp3" autoplay loop muted></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
